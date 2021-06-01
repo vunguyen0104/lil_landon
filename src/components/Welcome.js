@@ -1,5 +1,5 @@
 import React from 'react';
-import imageLinksData from './data/image_links.json'
+import galleryImagesData from './data/gallery_images.json'
 
 const Welcome = () => {
   return (
@@ -7,8 +7,8 @@ const Welcome = () => {
       <article className="content">
         <div className="gallery">
           {
-            imageLinksData.map((link) => 
-              <img className={link.class} src={link.src} alt={link.alt} />
+            galleryImagesData.map((link) => 
+              <img className={link.className} src={link.src} alt={link.alt} />
             )
           }
         </div>
